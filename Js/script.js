@@ -16,16 +16,12 @@
 
 //console.log(nome1);
 
-let botao = document.getElementById("meu-btn");
+let botao = document.getElementById("click");
 console.log(botao.textContent);
 
 botao.addEventListener("click",function(){ 
-    //console.log(this.textContent);
-    //Função matemática Math
-    //randon = Retorna um numero aleatorio entre 0 e 1 . Ex: 0.2282632765;
-    //floor = Ela arredonda o numero para baixo.
-    //ceil = Ela arredonda um numero para cima.
-    //round = Ela arredonda um numero aleatoriamente.
+
+
     let r=0,g=0,b=0;
     r = Math.round(Math.random()*255);
     g = Math.round(Math.random()*255);

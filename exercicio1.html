@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Js/exercicio1.js" defer></script>
+</head>
+<body id="corpo">
+    <button id="meu-btn">CLICK</button>
+    <div>
+        <form action="index.html" method="GET" onsubmit="return false">    
+            <fieldset>     
+                <legend>Contato</legend>      
+                    <div>      
+                        <label for="idEmail">Email</label>      
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email">       
+                    </div> 
+                    <div>    
+                        <label for="idNome">Nome</label>     
+                        <input type="nome" name="txtNome" id="idNome" placeholder="Nome">   
+                    </div>   
+                    <div>     
+                        <input id="botao_enviar" type="submit" value="Enviar">    
+                    </div>    
+            </fieldset>     
+        </form>  
+    </div>  
+
+    <!-- Formulário -->
+<form id="myForm">
+    <label for="textInput">Digite um item:</label>
+    <input type="text" id="textInput">
+    <button type="button" onclick="addItem()">Enviar</button>
+  </form>
+  
+  <!-- Lista de itens -->
+  <ul id="myList"></ul>
+  
+  <!-- Imagem com botão para trocar de imagem -->
+  <img id="myImage" src="./img/img social-1.png">
+  <button type="button" onclick="changeImage()">Trocar imagem</button>
+  
+  <!-- Botão para exibir mensagem -->
+  <button type="button" onclick="displayMessage()">Exibir mensagem</button>
+  <p id="message"></p>
+  
+  <!-- Botão para ocultar elemento HTML -->
+  <button type="button" onclick="hideElement()">Ocultar elemento</button>
+  <p id="elementToHide">Este é o elemento que será ocultado.</p>
+  
+
+
+</body>
+</html>
