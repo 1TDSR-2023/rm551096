@@ -35,23 +35,29 @@ function adicionarContato() {
     document.getElementById("email").value = "";
 }
 
-function trocarImagem() {
-    let imagem = document.getElementById("minhaImagem");
-    if (imagem.src.match("imagem1.jpg")) {
-        imagem.src = "imagem2.jpg";
-    } else {
-        imagem.src = "imagem1.jpg";
-    }
-}
+let btn_trocar = document.getElementById("btn-trocar");
+
+    btn_trocar.addEventListener("click",function() {
+        let img = document.querySelector("#imagem_lobo")
+
+        if (img.getAttribute("src") == './img/img2.jpg') {
+            let img = document.querySelector("#imagem_lobo")
+            img.setAttribute('src', './img/img3.jpg');
+        }
+         else {
+            let img = document.querySelector("#imagem_lobo")
+            img.setAttribute('src', './img/img4.jpg');
+         };
+    });
 
 function exibirMensagem() {
-    let elemento = document.getElementById("meuElemento");
-    elemento.innerHTML = "Representação da imagem.";
+    let elemento = document.getElementById("exibirMensagem");
+    elemento.innerHTML = "O lobo está apreciando a vista.";
     elemento.style.display = "block";
 }
 
 function ocultarElemento() {
-    let paragrafo = document.getElementById("meuParagrafo");
+    let paragrafo = document.getElementById("ocultarElemento");
     if (paragrafo.style.display === "none") {
         paragrafo.style.display = "block";
     } else {
